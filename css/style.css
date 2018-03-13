@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  background-color: darkorange; 
+  padding: 0.5em;
+  color: #fff;
+  border-radius: 0.2em;
+}
