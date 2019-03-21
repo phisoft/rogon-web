@@ -1,21 +1,185 @@
-* {
-  box-sizing: border-box;
+header {
+  background-color: #eee !important;
 }
 
-body {
-  background-color: #f0f0f0;
+dialog {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.container {
-  margin: 0 auto;
-  margin-top: 200px;
+.mdl-dialog {
+  width: 85%;
+  max-width: 600px;
+}
+
+.mdl-card {
+  min-height: 300px;
+  width: 95%;
+}
+
+.ps-logo {
+  padding: 0.5em;
+}
+
+.ps-banner {
+  background-color: #eee !important;
+  text-align: center;
+  padding: 0.5em;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.ps-colead {
+  margin: 0.5em;
+}
+
+.ps-colead > .mdl-card__title {
+  height: 176px;
+  background: url('../img/legal.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-roompillow {
+  margin: 0.5em;
+}
+
+.ps-roompillow > .mdl-card__title {
+  height: 176px;
+  background: url('../img/bed.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-dental {
+  margin: 0.5em;
+}
+
+.ps-dental > .mdl-card__title {
+  height: 176px;
+  background: url('../img/dental.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-pestplanner {
+  margin: 0.5em;
+}
+
+.ps-pestplanner > .mdl-card__title {
+  height: 176px;
+  background: url('../img/pest.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-selloca {
+  margin: 0.5em;
+}
+
+.ps-selloca > .mdl-card__title {
+  height: 176px;
+  background: url('../img/property.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-panelclaim {
+  margin: 0.5em;
+}
+
+.ps-panelclaim > .mdl-card__title {
+  height: 176px;
+  background: url('../img/panel.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-rentgoer {
+  margin: 0.5em;
+}
+
+.ps-rentgoer > .mdl-card__title {
+  height: 176px;
+  background: url('../img/bike.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-thesisprint {
+  margin: 0.5em;
+}
+
+.ps-thesisprint > .mdl-card__title {
+  height: 176px;
+  background: url('../img/book.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-nunukragang {
+  margin: 0.5em;
+}
+
+.ps-nunukragang > .mdl-card__title {
+  height: 176px;
+  background: url('../img/sumandak.jpg') bottom / cover;
+  background-color: gray;
+  color: white;
+}
+
+.banner {
+  padding: 1.5em;
+}
+
+.ps-services {
+  background-color: #0d0f23;
+  color: #888888;
+}
+
+.ps-services-text {
+  padding: 0.5em;
+  margin-bottom: 25px;
+}
+
+.ps-services-image {
+  background: url('../img/programmer.jpg') bottom / cover;
+}
+
+.ps-about {
+  background-color: #063348;
+  border-top: 1px solid #474747;
+  border-bottom: 1px solid #474747;
+  color: #aaa;
+}
+
+.ps-about-image {
+  background: url('../img/tunnel.jpg') bottom / cover;
+}
+
+.ps-about-text {
+  text-align: justify;
+  padding: 0.5em;
+  margin-bottom: 25px;
+}
+
+.ps-services-text h3, .ps-about-text h3 {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  background-color: darkorange; 
-  padding: 0.5em;
+.mdl-mega-footer {
+  background-color: #0c0b0b;
+}
+
+.mdl-tabs__tab-bar {
+  border-bottom: none;
+}
+
+.mdl-tabs__tab {
+  color: #b3b3b3;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
   color: #fff;
-  border-radius: 0.2em;
 }
