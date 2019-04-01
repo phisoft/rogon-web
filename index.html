@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title> Phi Software Sdn Bhd - Mobile app and software developer. Kota Kinabalu, Sabah, Malaysia </title>
+<title> Rogon Network </title>
 <meta name="title" content="Phi Software Sdn Bhd">
+<link rel="icon" type="image/icon" href="img/rogon_icon.png">
 <meta name="description" content="Phi Software Sdn Bhd is a software company based in Kota Kinabalu, Sabah, Malaysia.">
 <meta name="keywords" content="kota kinabalu software developer, kota kinabalu programmer,  sabah developer, kota kinabalu mobile app developer, kota kinabalu cloud software, web application kota kinabalu, kk programmer, kk app developer">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
-<meta name="author" content="Phi Software Sdn Bhd">
+<meta name="author" content="Rogon Network">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="css/material.min.css">
@@ -17,15 +18,65 @@
 <link rel="stylesheet" href="css/dialog-polyfill.css">
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
+
+<style>
+  .demo-layout-transparent {
+    background: url('img/1.jpg') center / cover;
+  }
+
+
+  .banner-section {
+  padding: 0;
+  background-image: url(img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: top 50%;
+  background-size: cover;
+  min-height: 750px;
+}
+.banner-section .slide-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.banner-section .slide-content h1 {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height:1.5em;
+}
+.coll-middle {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+.coll-middle .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.overflow-hide {
+  overflow: hidden !important;
+}
+  </style>
+
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
   <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
       <span class="mdl-layout__title">
-        <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="180" /></a>
+        <a href="/"><img alt="Rogon Network" src="img/rogon_icon.png" width="100" /></a>Rogon Network
       </span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html"> Home </a></li>
         <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
         <a class="mdl-navigation__link" href="#services"> Services </a></li>
         <a class="mdl-navigation__link" href="#about"> About Us</a></li>
@@ -36,9 +87,10 @@
 
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title ps-logo">
-      <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="150" /></a>
+      <a href="/"><img alt="Rogon Network" src="img/rogon_icon.png" width="80" /></a>
     </span>
     <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html"> Home </a></li>
       <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
       <a class="mdl-navigation__link" href="#services"> Services </a></li>
       <a class="mdl-navigation__link" href="#about"> About Us</a></li>
@@ -46,16 +98,18 @@
     </nav>
   </div>
 
-<main class="mdl-layout__content">
-  <div class="ps-banner">
-      <h3> We are a small company driven by innovations and big dreams. </h3>
-      <h6>
-        Our dream is to help your business grow and achieve greater efficiency, profit and values through our domain expertise.
-      </h6>
-      <div>
-        <a href="#about" class="mdl-button mdl-js-button"> <i class="material-icons">chevron_right</i>Learn More </a>
-      </div>
-  </div>
+<main class="mdl-layout mdl-js-layout">
+  <section class="banner-section full-height-section">
+    <div class="slide-content">
+        <div class="coll-middle">
+            <div class="inner">
+                <div class="container">
+                    <h1 class="banner-content">The Best Web Hosting</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   <a name="solutions"></a>
   <div class="mdl-grid">
@@ -215,41 +269,39 @@
   </div>
 
   <div class="mdl-grid ps-services mdl-grid--no-spacing">
-    <div class="mdl-cell mdl-cell--8-col">
+    <div class="mdl-cell mdl-cell--12-col">
       <a name="services"></a>
       <div class="ps-services-text">
-        <h3> Services </h3>
+        <h3> Services </h3> 
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Business process automation </h5>
             We help company organise business records and automate business process and reporting.
           </div>
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Web and mobile application development </h5>
             We develop web application and mobile application prototype to meet our client's idea and vision.
           </div>
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Cloud Solutions </h5>
             We manage a range of software as services software tailored for specific industry.
           </div>
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Web development and hosting </h5>
             We provide website development together with reliable and secure web hosting service.
           </div>
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Software Integration </h5>
             We do third party software integration including payment gateway integration, dropbox integration,
             google gapi, facebook and xero accounting software.
           </div>
-          <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-cell mdl-cell--4-col">
             <h5> Consultation </h5>
             Let's get in touch and tell us your vision and we will work together on how to make it into reality.
           </div>
         </div> 
       </div>
     </div>
-    <div class="mdl-cell mdl-cell--4-col ps-services-image">
-    </div> 
   </div>
 
   <div class="mdl-grid ps-about mdl-grid--no-spacing">

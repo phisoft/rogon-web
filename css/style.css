@@ -22,13 +22,7 @@ dialog {
   padding: 0.5em;
 }
 
-.ps-banner {
-  background-color: #eee !important;
-  text-align: center;
-  padding: 0.5em;
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
+
 
 .ps-colead {
   margin: 0.5em;
@@ -129,23 +123,24 @@ dialog {
   color: white;
 }
 
-.banner {
-  padding: 1.5em;
-}
+
 
 .ps-services {
   background-color: #0d0f23;
-  color: #888888;
+  color: #ffffff;
 }
 
 .ps-services-text {
   padding: 0.5em;
+  margin: 0 auto;
   margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+
+  
 }
 
-.ps-services-image {
-  background: url('../img/programmer.jpg') bottom / cover;
-}
 
 .ps-about {
   background-color: #063348;
