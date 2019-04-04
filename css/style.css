@@ -22,109 +22,6 @@ dialog {
   padding: 0.5em;
 }
 
-
-
-.ps-colead {
-  margin: 0.5em;
-}
-
-.ps-colead > .mdl-card__title {
-  height: 176px;
-  background: url('../img/legal.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-roompillow {
-  margin: 0.5em;
-}
-
-.ps-roompillow > .mdl-card__title {
-  height: 176px;
-  background: url('../img/bed.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-dental {
-  margin: 0.5em;
-}
-
-.ps-dental > .mdl-card__title {
-  height: 176px;
-  background: url('../img/dental.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-pestplanner {
-  margin: 0.5em;
-}
-
-.ps-pestplanner > .mdl-card__title {
-  height: 176px;
-  background: url('../img/pest.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-selloca {
-  margin: 0.5em;
-}
-
-.ps-selloca > .mdl-card__title {
-  height: 176px;
-  background: url('../img/property.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-panelclaim {
-  margin: 0.5em;
-}
-
-.ps-panelclaim > .mdl-card__title {
-  height: 176px;
-  background: url('../img/panel.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-rentgoer {
-  margin: 0.5em;
-}
-
-.ps-rentgoer > .mdl-card__title {
-  height: 176px;
-  background: url('../img/bike.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-thesisprint {
-  margin: 0.5em;
-}
-
-.ps-thesisprint > .mdl-card__title {
-  height: 176px;
-  background: url('../img/book.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-.ps-nunukragang {
-  margin: 0.5em;
-}
-
-.ps-nunukragang > .mdl-card__title {
-  height: 176px;
-  background: url('../img/sumandak.jpg') bottom / cover;
-  background-color: gray;
-  color: white;
-}
-
-
-
 .ps-services {
   background-color: #0d0f23;
   color: #ffffff;
@@ -133,12 +30,26 @@ dialog {
 .ps-services-text {
   padding: 0.5em;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   margin-left: 100px;
   margin-right: 100px;
+}
 
+.ps-choose {
+  background-color: #2e3047;
+  color: #ffffff;
+}
 
-  
+.ps-choose-text {
+  padding: 1.0 em;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.ps-choose-image {
+  background: url('../img/3.jpg') bottom / cover;
 }
 
 
@@ -178,3 +89,5 @@ dialog {
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
   color: #fff;
 }
+
+
