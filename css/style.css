@@ -1,5 +1,5 @@
 header {
-  background-color: #eee !important;
+  background-color:#1c0d58 !important;
 }
 
 dialog {
@@ -17,14 +17,93 @@ dialog {
   min-height: 300px;
   width: 95%;
 }
-
 .ps-logo {
   padding: 0.5em;
 }
 
+.ps-1 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-1 > .mdl-card__title {
+  background: url('../img/g.jpg') center / cover;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+}
+
+.ps-2 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-2 > .mdl-card__title {
+  background: url('../img/c.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-3 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-3 > .mdl-card__title {
+  background: url('../img/d.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-4 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-4 > .mdl-card__title {
+  background: url('../img/f.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+.ps-5 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-5 > .mdl-card__title {
+  background: url('../img/b.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+
+.ps-6 {
+  margin: 0.5em;
+  margin: auto;
+  width: 350px;
+  height: 200px;
+}
+
+.ps-6 > .mdl-card__title {
+  background: url('../img/a.jpg') center / cover;
+  background-color: gray;
+  color: white;
+}
+
+
 .ps-services {
-  background-color: #0d0f23;
-  color: #ffffff;
+  background-color: #1c0d58;
+  color: #ddd7d7;
 }
 
 .ps-services-text {
@@ -36,46 +115,32 @@ dialog {
 }
 
 .ps-choose {
-  background-color: #2e3047;
-  color: #ffffff;
+  background-color: #c7c2c2;
+  color: #131531;
 }
 
 .ps-choose-text {
   padding: 1.0 em;
   margin: 0 auto;
   margin-bottom: 35px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-right: 100px;
+}
+.ps-desc{
+  color: rgb(63, 63, 63);
 }
 
 .ps-choose-image {
   background: url('../img/3.jpg') bottom / cover;
+  padding : 0.5em;
 }
 
-
-.ps-about {
-  background-color: #063348;
-  border-top: 1px solid #474747;
-  border-bottom: 1px solid #474747;
-  color: #aaa;
-}
-
-.ps-about-image {
-  background: url('../img/tunnel.jpg') bottom / cover;
-}
-
-.ps-about-text {
-  text-align: justify;
-  padding: 0.5em;
-  margin-bottom: 25px;
-}
-
-.ps-services-text h3, .ps-about-text h3 {
+.ps-services-text h3{
   text-align: center;
 }
 
 .mdl-mega-footer {
-  background-color: #0c0b0b;
+  background-color: #1c0d58;
 }
 
 .mdl-tabs__tab-bar {
@@ -83,11 +148,29 @@ dialog {
 }
 
 .mdl-tabs__tab {
-  color: #b3b3b3;
+  color: #ffffff;
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
   color: #fff;
 }
 
+.footer-social-box {
+	margin-left:30px;
+}
+.footer-social-box ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.footer-social-box ul li {
+	float:left;
+	padding:10px 6px 0 6px;
+}
+.footer-social-box ul li a i {
+	color:#A1D0FF
+}
+.footer-social-box ul li a:hover i {
+	color:rgb(255, 255, 255);
 
+  
