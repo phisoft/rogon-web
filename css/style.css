@@ -7,6 +7,13 @@ dialog {
   top: 50%;
   transform: translate(0, -50%);
 }
+.schedule-button {
+  margin-left: 8em;
+}
+
+.banner-content {
+  padding-left: 50px;
+}
 
 .mdl-dialog {
   width: 85%;
@@ -109,9 +116,14 @@ dialog {
 .ps-services-text {
   padding: 0.5em;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  margin-top: 35px;
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.ps-services-text h3 {
+  text-align: center;
 }
 
 .ps-choose {
@@ -133,10 +145,8 @@ dialog {
 .ps-choose-image {
   background: url('../img/3.jpg') bottom / cover;
   padding : 0.5em;
-}
-
-.ps-services-text h3{
-  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .mdl-mega-footer {
@@ -172,5 +182,4 @@ dialog {
 }
 .footer-social-box ul li a:hover i {
 	color:rgb(255, 255, 255);
-
-  
+}
