@@ -1,18 +1,22 @@
-header {
-  background-color:#1c0d58 !important;
-}
 
 dialog {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
 }
+
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-navigation__link  {
+  color: white;
+}
+
 .schedule-button {
   margin-left: 8em;
 }
 
 .banner-content {
-  padding-left: 50px;
+  padding-left: 90px;
 }
 
 .mdl-dialog {
@@ -28,83 +32,73 @@ dialog {
   padding: 0.5em;
 }
 
-.ps-1 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
+
+.big-header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: bold;
+  font-weight: 700;
+  line-height:1;
 }
 
-.ps-1 > .mdl-card__title {
-  background: url('../img/g.jpg') center / cover;
-  background-color: gray;
+.ps-banner {
+  background-image: url('../img/1.jpg');
+  background-size: cover;
+  background-position: top 40% center;
+  text-align: left;
+  padding: 0.5em;
+  padding-left: 115px;
+  padding-top: 150px;
+  padding-bottom: 0px;
+  height: 500px;
+  font-family: Open Sans;
   color: rgb(255, 255, 255);
 }
 
-.ps-2 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
 }
 
-.ps-2 > .mdl-card__title {
-  background: url('../img/c.jpg') center / cover;
-  background-color: gray;
+.feature{
+  background-image: url('../img/star.jpg');
+  background-repeat: no-repeat;
+  background-position: top 50%;
+  background-size: cover;
+  padding-top: 1.0em;
+  padding-bottom: 5.0em;
   color: white;
 }
 
-.ps-3 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
+.feature .overlay-feature {
+  padding: 90px 0;
+  background-color: rgba(175, 176, 221, 0.8);
 }
 
-.ps-3 > .mdl-card__title {
-  background: url('../img/d.jpg') center / cover;
-  background-color: gray;
-  color: white;
+.ps-feature-text{
+  padding-bottom: 0.5em;
+  margin-top: 10px;
+  text-align:center;
 }
 
-.ps-4 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
+.feature h5{
+  font-weight:600;
 }
 
-.ps-4 > .mdl-card__title {
-  background: url('../img/f.jpg') center / cover;
-  background-color: gray;
-  color: white;
+.feature i{
+  font-size:50px;
 }
 
-.ps-5 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
+.content-grid {
+  max-width: 1100px;
+  height: 250px;
+ 
 }
-
-.ps-5 > .mdl-card__title {
-  background: url('../img/b.jpg') center / cover;
-  background-color: gray;
-  color: white;
-}
-
-
-.ps-6 {
-  margin: 0.5em;
-  margin: auto;
-  width: 350px;
-  height: 200px;
-}
-
-.ps-6 > .mdl-card__title {
-  background: url('../img/a.jpg') center / cover;
-  background-color: gray;
-  color: white;
+.background{
+  padding-top: 2.0em;
+  background-color:white;
+  text-align:center;
+  color: #1c0d58;
 }
 
 
@@ -150,7 +144,7 @@ dialog {
 }
 
 .mdl-mega-footer {
-  background-color: #1c0d58;
+  background-color: #2a2a2a;
 }
 
 .mdl-tabs__tab-bar {
