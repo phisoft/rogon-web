@@ -55,11 +55,6 @@ dialog {
   color: rgb(255, 255, 255);
 }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-}
-
 .feature{
   background-image: url('../img/star.jpg');
   background-repeat: no-repeat;
@@ -68,11 +63,6 @@ dialog {
   padding-top: 1.0em;
   padding-bottom: 5.0em;
   color: white;
-}
-
-.feature .overlay-feature {
-  padding: 90px 0;
-  background-color: rgba(175, 176, 221, 0.8);
 }
 
 .ps-feature-text{
@@ -110,7 +100,7 @@ dialog {
 .ps-services-text {
   padding: 0.5em;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   margin-top: 35px;
   margin-left: 100px;
   margin-right: 100px;
@@ -120,28 +110,39 @@ dialog {
   text-align: center;
 }
 
-.ps-choose {
-  background-color: #c7c2c2;
+.background-choose1 {
+  background-color: #ffffff;
   color: #131531;
 }
 
-.ps-choose-text {
-  padding: 1.0 em;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  margin-left: 50px;
-  margin-right: 100px;
-}
-.ps-desc{
-  color: rgb(63, 63, 63);
+.background-choose2 {
+  background-image: url('../img/e.jpg');
+  background-repeat: no-repeat;
+  background-position: top 50%;
+  background-size: cover;
 }
 
-.ps-choose-image {
-  background: url('../img/3.jpg') bottom / cover;
-  padding : 0.5em;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.content-choose {
+  max-width: 1100px;
+  height: 250px;
 }
+.ps-choose-text  {
+  padding-left: 0.5em;
+  font-weight:600;
+}
+
+.ps-choose-text2 h5{
+margin-top:0px;
+font-weight:550;
+}
+
+.ps-choose-spacing{
+  margin-left: 60px;
+  margin-right:60px;
+  margin-bottom: 20px;
+
+}
+
 
 .mdl-mega-footer {
   background-color: #2a2a2a;
