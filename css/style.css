@@ -5,7 +5,6 @@ dialog {
   transform: translate(0, -50%);
 }
 
-
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-navigation__link  {
   color: white;
@@ -30,33 +29,31 @@ dialog {
 }
 .ps-logo {
   padding: 0.5em;
+  padding-top: 1em;
 }
 
 
 .big-header{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 38pt;
   font-style: bold;
   font-weight: 700;
   line-height:1;
 }
 
 .ps-banner {
-  background-image: url('../img/1.jpg');
+  background-color: #333;
   background-size: cover;
-  background-position: top 40% center;
-  text-align: left;
-  padding: 0.5em;
-  padding-left: 115px;
-  padding-top: 150px;
+  text-align: center;
+  padding-top: 250px;
   padding-bottom: 0px;
-  height: 500px;
+  height: 380px;
   font-family: Open Sans;
   color: rgb(255, 255, 255);
 }
 
 .feature{
-  background-image: url('../img/star.jpg');
+  background-color: #333;
   background-repeat: no-repeat;
   background-position: top 50%;
   background-size: cover;
@@ -95,6 +92,7 @@ dialog {
 .ps-services {
   background-color: #1c0d58;
   color: #ddd7d7;
+  padding-bottom: 50px;
 }
 
 .ps-services-text {
@@ -106,8 +104,18 @@ dialog {
   margin-right: 100px;
 }
 
+.ps-services-text .mdl-cell {
+  font-size: 12pt;
+  padding: 2em; 
+  text-align: center;
+}
+
 .ps-services-text h3 {
   text-align: center;
+}
+
+.ps-services-text .material-icons {
+  font-size: 40pt; 
 }
 
 .background-choose1 {
@@ -143,9 +151,14 @@ font-weight:550;
 
 }
 
-
 .mdl-mega-footer {
-  background-color: #2a2a2a;
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.mdl-mega-footer__heading {
+  font-size: 12pt;
+  color: #333;
 }
 
 .mdl-tabs__tab-bar {
