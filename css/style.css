@@ -7,7 +7,8 @@ dialog {
 
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-navigation__link  {
-  color: white;
+  color: #d40000;
+  font-size: large;
 }
 
 .schedule-button {
@@ -42,80 +43,111 @@ dialog {
 }
 
 .ps-banner {
-  background-color: #333;
+  /*background-color: #666666;*/
+
+  /*picture*/
+  background-image: linear-gradient(rgba(234, 240, 243, 0.5), rgba(197, 210, 216, 0.2)),url('../img/village2.jpg');
   background-size: cover;
   text-align: center;
   padding-top: 250px;
   padding-bottom: 0px;
   height: 380px;
   font-family: Open Sans;
-  color: rgb(255, 255, 255);
+  color: blue;
 }
 
-.feature{
-  background-color: #333;
+.service{
+  background-color: #666666;
   background-repeat: no-repeat;
   background-position: top 50%;
-  background-size: cover;
+  background-size:cover;
   padding-top: 1.0em;
-  padding-bottom: 5.0em;
-  color: white;
+  padding-bottom: 20.0em;
+  color: black;
 }
 
-.ps-feature-text{
+.ps-service-text{
   padding-bottom: 0.5em;
   margin-top: 10px;
   text-align:center;
+  
 }
 
-.feature h5{
+.service h5{
   font-weight:600;
+  color:blue;
+  
 }
 
-.feature i{
+.service i{
   font-size:50px;
+  color:blue;
+}
+.service p{
+  color:black;
+}
+.button{
+  margin-top:10%;
+  margin-right:auto;
+  margin-left: auto;
+  background-color:#d40000;
+}
+
+.submitbutton{
+  margin-top:5%;
+  margin-right:auto;
+  margin-left: 25%;
+  background-color:#2781ca;
+}
+.form{
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .content-grid {
   max-width: 1100px;
   height: 250px;
+  color:#131531;
  
 }
 .background{
   padding-top: 2.0em;
   background-color:white;
   text-align:center;
-  color: #1c0d58;
+  color: #1531;
 }
 
 
-.ps-services {
-  background-color: #1c0d58;
-  color: #ddd7d7;
+.ps-aboutus {
+  background-color: white;
+
   padding-bottom: 50px;
 }
 
-.ps-services-text {
+.ps-aboutus-text {
   padding: 0.5em;
   margin: 0 auto;
   margin-bottom: 35px;
   margin-top: 35px;
-  margin-left: 100px;
-  margin-right: 100px;
+  text-align:center;
+ /* margin-left: 100px;
+  margin-right: 100px;*/
 }
 
-.ps-services-text .mdl-cell {
+.ps-aboutus-text .mdl-cell {
   font-size: 12pt;
   padding: 2em; 
   text-align: center;
 }
 
-.ps-services-text h3 {
+.ps-aboutus-text h5 {
   text-align: center;
+  color:blue;
 }
 
-.ps-services-text .material-icons {
+.ps-aboutus-text .material-icons {
   font-size: 40pt; 
+  color:blue;
 }
 
 .background-choose1 {
@@ -152,13 +184,13 @@ font-weight:550;
 }
 
 .mdl-mega-footer {
-  background-color: #f0f0f0;
-  color: #666;
+  background-color: #666666;
+  color: #131531;
 }
 
 .mdl-mega-footer__heading {
   font-size: 12pt;
-  color: #333;
+  color: #131531;
 }
 
 .mdl-tabs__tab-bar {
@@ -191,3 +223,79 @@ font-weight:550;
 .footer-social-box ul li a:hover i {
 	color:rgb(255, 255, 255);
 }
+/*button*/
+.back-to-top {
+  position:fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 25px;
+  right: 20px;
+  z-index: 998;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  background: #d80404;
+  align-items: center;
+  justify-content:center;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #666666;
+  line-height: 0; 
+}
+.back-to-top:hover {
+  background: #980101;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/* how it work */
+
+.ps-how {
+  background-color: white;
+
+  padding-bottom: 50px;
+}
+
+.ps-how-text {
+  padding: 0.5em;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  text-align:center;
+  /*margin-left: 100px;
+  margin-right: 100px;*/
+}
+.ps-how-text h3{
+  font-weight: 600;
+}
+
+.ps-how-text .mdl-cell {
+  font-size: 12pt;
+  padding: 2em; 
+  text-align: center;
+}
+
+.ps-how-text h5 {
+  text-align: center;
+  color:blue;
+}
+
+.ps-how-text p {
+  text-align: center;
+  font-size:large;
+  
+}
+.ps-how-text li {
+  text-align: justify;
+  font-size:medium;
+  
+}
+
+
+
+
+
