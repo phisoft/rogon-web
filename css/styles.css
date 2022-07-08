@@ -107,13 +107,13 @@ h6 {
 }
 
 .p-large {
-	font-size: 1.125rem;
+	font-size: 1rem;
 	line-height: 1.85rem;
 }
 
 @media (min-width: 991px) {
-	.p-lg-large {
-		font-size: 1.25rem;
+	.p-large {
+		font-size: 1.125rem;
 		line-height: 1.85rem;
 	}
 }
@@ -540,8 +540,8 @@ a:hover {
 /*     Introduction     */
 /************************/
 .basic-1 {
-	padding-top: 9.5rem;
-	padding-bottom: 9rem;
+	padding-top: 5.5rem;
+	padding-bottom: 5rem;
 }
 
 .basic-1 h1 {
@@ -553,8 +553,15 @@ a:hover {
 /*     Project 1     */
 /*********************/
 .basic-2 {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+@media (min-width: 991px) {
+	.basic-2 {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
 }
 
 .basic-2 .text-container {
@@ -1741,3 +1748,4 @@ a:hover {
 .text-black{
 	color: #2b2b2b;
 }
+
