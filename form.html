@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Rogon Network </title>
+<meta name="title" content="Phi Software Sdn Bhd">
+<link rel="icon" type="image/icon" href="img/rogon_icon.png">
+<meta name="description" content="Phi Software Sdn Bhd is a software company based in Kota Kinabalu, Sabah, Malaysia.">
+<meta name="keywords" content="kota kinabalu software developer, kota kinabalu programmer,  sabah developer, kota kinabalu mobile app developer, kota kinabalu cloud software, web application kota kinabalu, kk programmer, kk app developer">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="Rogon Network">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/material.min.css">
+<link rel="stylesheet" href="css/fontawesome-all.min.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dialog-polyfill.css">
+<link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+
+
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <h3>Contact Us</h3>
+      </header>
+    <div class="demo-ribbon"></div>
+
+  <main class="demo-main mdl-layout__content">
+    <div class="demo-container mdl-grid">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+          <div class="demo-crumbs mdl-color-text--grey-500">
+            <h3>Fill in the form</h3>
+
+            <!--OSM-->
+              <div id = "map" style = "width:100%; height:550px;"></div>
+            </div>
+
+              <!--google-->
+             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2033857.3996983771!2d116.39037805937498!3d5.359199721392355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1635299056619!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+          <form>
+            <div class="mdl-cell mdl-cell--12-col" style="text-align:center;" >
+              <div class="row">
+                <div class="input-field col s6 form">
+                  <i class="material-icons prefix">account_circle</i>
+                  <label for="icon_prefix">First Name</label>
+                  <input id="icon_prefix" type="text" class="validate">
+                </div>
+
+                <div class="input-field col s6 form">
+                  <i class="material-icons prefix">phone</i>
+                  <label for="icon_telephone">Telephone</label>
+                  <input id="icon_telephone" type="tel" class="validate"></br>
+                </div>
+
+                <button id="Submitbutton" class="mdl-button mdl-js-button mdl-button--raised submitbutton">Submit</button></br> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-copy"> &copy; 2021 Rogon Network </div>
+        </div>
+      </footer>
+    </div>
+  <script>
+    /* var mapOptions = {
+            center: [5.980408, 116.073456],//Kota Kinabalu
+            zoom: 6
+         }
+         
+       // Creating a map object
+      var map = new L.map('map', mapOptions);
+         
+      // Creating a Layer object
+      var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+      // Adding layer to the map
+      map.addLayer(layer);
+
+      map.on("click", function(e){
+      /*marker.remove()*/
+      /*new L.Marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+        alert(e.latlng)
+      })
+
+      // Creating a Marker
+      var markerOptions = {
+            /*title: "MyLocation",
+            
+            clickable: true,
+            draggable: true
+            
+         }
+
+         // Creating a marker
+        var marker = new L.Marker([5.980408, 116.073456], markerOptions);
+
+        // Adding marker to the map
+       // marker.bindPopup('Kota Kinabalu').openPopup();
+        marker.addTo(map)*/
+        //new
+
+        // center, zoom, and maxZoom of the map
+var center = [5.980408, 116.073456],
+  zoom = 6,
+  moreZoom = 9,
+  maxZoom = 18
+
+// get location using the Geolocation interface
+var geoLocationOptions = {
+  enableHighAccuracy: true,
+  timeout: 10000,
+  maximumAge: 0
+}
+
+var myLat, myLng, myAcc, display_name, osm_id, myMarker
+
+function cb(data) {
+  display_name = data.display_name
+  osm_id = data.osm_id
+  myMarker.addTo(map)
+    .bindPopup(`<b>Your location</b><br>
+                   Latitude: ${myLat} <br>
+                   Longitude: ${myLng} <br>
+                   More or less: ${myAcc} 
+                     meters <br>
+                <b>Your address</b><br>
+                   ${display_name} <br>
+                 <b>OSM ID</b><br>
+                   ${osm_id} 
+                 `).openPopup()
+
+}
+
+function success(position) {
+
+  myLat = position.coords.latitude.toFixed(6)
+  myLng = position.coords.longitude.toFixed(6)
+  myAcc = position.coords.accuracy
+  latLng = [myLat, myLng]
+  map.setZoom(moreZoom)
+  map.panTo(latLng)
+
+  var script = document.createElement('script')
+  script.id = 'nominatim'
+  script.async = true // This is required for asynchronous execution
+  script.src = 'https://nominatim.openstreetmap.org/reverse?json_callback=cb&format=json&lat=' + myLat + '&lon=' +
+    myLng + '&zoom=27&addressdetails=1'
+  document.body.appendChild(script)
+  myMarker = L.marker(latLng)
+  document.body.removeChild(script)
+}
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`)
+}
+
+navigator.geolocation.getCurrentPosition(success, error, geoLocationOptions)
+
+
+// create the map
+var map = L.map('map', {
+  contextmenu: true,
+  contextmenuWidth: 140,
+  contextmenuItems: [{
+      text: 'Center map here',
+      callback: centerMap
+    },
+    {
+      text: 'Add marker here',
+      callback: addMarker,
+    }
+  ]
+}).setView(center, zoom)
+
+
+
+// set up the OSM layer
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: maxZoom
+  }).addTo(map)
+
+
+// function to center map
+function centerMap(e) {
+  map.panTo(e.latlng)
+}
+var markerOptions = {
+            /*title: "MyLocation",*/
+            
+            clickable: true,
+            draggable: true
+}
+  // Creating a marker
+       // var marker = new L.Marker([5.980408, 116.073456], markerOptions);
+
+// function to add marker
+function addMarker(e) {
+  L.marker(e.latlng).addTo(map)
+    
+}
+ 
+  </script>
+  </body>
+</html>
+
