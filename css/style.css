@@ -3733,7 +3733,10 @@ h6 {
   line-height: 1.5;
   text-shadow: 1px 1px 4px black;
 }
-
+.impress_area.p_120 {
+   padding-top: 150px;
+   padding-bottom: 120px;
+}
 /* End Looking Area css
 ============================================================================================ */
 /* About Area css
