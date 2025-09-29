@@ -426,7 +426,7 @@ button:focus {
 }
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/civil-black.jpg) no-repeat scroll center center;
+  background: url(../img/banner/header-2.png) no-repeat scroll center center;
   background-size: cover;
   
 }
