@@ -175,7 +175,7 @@ button:focus {
 
 .logo-width-13 {
   max-width: 50%;
-  width: 20%;
+  width: 12%;
 }
 
 @media (min-width:991px) {
@@ -185,8 +185,8 @@ button:focus {
   }
 
   .logo-width-13 {
-    max-width: 50%;
-    width: 9%;
+    max-width: 25%;
+    width: 6%;
   }
 }
 
