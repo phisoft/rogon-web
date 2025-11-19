@@ -570,6 +570,26 @@ section {
   font-size: 14px;
 }
 
+.get-started .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.get-started .content ul li {
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.get-started .content ul i {
+  font-size: 14px;
+  padding-right: 4px;
+  color: var(--color-primary);
+}
+
+.get-started .content p:last-child {
+  margin-bottom: 0;
+}
+
 .get-started .php-email-form {
   background: #fff;
   padding: 30px;
