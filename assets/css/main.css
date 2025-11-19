@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #666666;
   text-decoration: none;
 }
 
@@ -181,12 +181,12 @@ section {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: #fff;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #666666;
   color: #fff;
 }
 
@@ -254,12 +254,32 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  z-index: 997;
-  position: absolute;
-  padding: 30px 0;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  z-index: 9999;
+  
+  /* Animation Settings */
+  background: transparent; 
+  transition: all 0.5s ease;
+  padding: 20px 0;
+}
+
+.header.header-scrolled {
+  background: #fff;
+  color: #000;
+  padding: 8px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header.header-scrolled .navbar a {
+  color: var(--color-default);
+}
+
+#header.header-scrolled .navbar a:hover,
+#header.header-scrolled .navbar .active:focus {
+  color: var(--color-primary); /* Use your brand color (Gold/Orange) here */
 }
 
 .header .logo img {
@@ -275,6 +295,10 @@ section {
   font-family: var(--font-primary);
 }
 
+#header.header-scrolled .logo h1 {
+  color: var(--color-default);
+}
+
 .header .logo h1 span {
   color: var(--color-primary);
 }
@@ -284,7 +308,7 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
-    padding: 0;
+    position: flex;
   }
 
   .navbar ul {
@@ -686,7 +710,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #666666;
 }
 
 @-webkit-keyframes animate-loading {
