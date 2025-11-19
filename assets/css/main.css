@@ -95,6 +95,10 @@ section {
   margin: 0 auto 0 auto;
 }
 
+.section-header p span {
+  color: var(--color-primary);
+}
+
 @media (min-width: 1199px) {
   .section-header p {
     max-width: 60%;
