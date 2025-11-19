@@ -73,12 +73,40 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
+
   // Navbar toggle on scroll
   const header = document.querySelector('#header');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) header.classList.add('header-scrolled');
       else header.classList.remove('header-scrolled');
     });
+
+  /**
+    * Navbar links active state on scroll
+    */
+  const navbarlinks = document.querySelectorAll('#navbar a');
+
+  function navbarlinksActive() {
+    navbarlinks.forEach(navbarlink => {
+      if (!navbarlink.hash) return;
+      
+      let section = document.querySelector(navbarlink.hash);
+      if (!section) return;
+
+      // Get the current scroll position
+      // We add 200px to make the link activate a bit early (for better UX)
+      let position = window.scrollY + 200;
+
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarlink.classList.add('active');
+      } else {
+        navbarlink.classList.remove('active');
+      }
+    })
+  }
+
+  window.addEventListener('load', navbarlinksActive);
+  window.addEventListener('scroll', navbarlinksActive);
 
   /**
    * Scroll top button
