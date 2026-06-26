@@ -4,536 +4,589 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#b32735">
 
-  <title>Rogon Network | Smart IoT Solutions & Rural Internet Connectivity in Sabah</title>
-  <meta name="description" content="Rogon Network provides smart IoT solutions, digital platforms, and rural internet connectivity in Sabah. We bridge the digital divide with meaningful technology for communities and industries.">
-  <meta name="keywords" content="Rogon Network, IoT solutions Sabah, digital platforms, rural internet connectivity, smart technology Malaysia, community integration, IoT innovations, Kota Kinabalu tech company, digital divide, smart devices, enterprise solutions, tech startups Sabah, Borneo technology, Sabah internet provider, rural connectivity solutions">
+  <title>Rogon Network | IoT Development &amp; Smart Solutions in Sabah, Borneo</title>
+  <meta name="description" content="Rogon Network is a Sabah-based IoT development company specializing in embedded systems, smart devices, digital platforms, and rural internet connectivity. We build meaningful technology for communities and industries across Borneo.">
+  <meta name="keywords" content="IoT development Sabah, IoT company Kota Kinabalu, embedded systems Borneo, ESP32 development, smart device Malaysia, IoT solutions Sabah, rural connectivity Sabah, digital platforms Borneo, technology company Sabah, Rogon Network, IoT innovations, Sabah internet provider, smart technology Malaysia, community tech integration">
   <link rel="canonical" href="https://rogon.network">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Rogon Network | Smart IoT Solutions & Rural Internet Connectivity in Sabah">
-  <meta property="og:description" content="Rogon Network provides smart IoT solutions, digital platforms, and rural internet connectivity in Sabah. We bridge the digital divide with meaningful technology for communities and industries.">
+  <meta property="og:title" content="Rogon Network | IoT Development &amp; Smart Solutions in Sabah, Borneo">
+  <meta property="og:description" content="Rogon Network is a Sabah-based IoT development company specializing in embedded systems, smart devices, digital platforms, and rural internet connectivity across Borneo.">
   <meta property="og:image" content="https://rogon.network/assets/img/logo.png">
   <meta property="og:url" content="https://rogon.network">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Rogon Network">
-  
+
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@rogonnetwork">
-  <meta name="twitter:title" content="Rogon Network | Smart IoT Solutions & Rural Internet Connectivity in Sabah">
-  <meta name="twitter:description" content="Rogon Network provides smart IoT solutions, digital platforms, and rural internet connectivity in Sabah. We bridge the digital divide with meaningful technology for communities and industries.">
+  <meta name="twitter:title" content="Rogon Network | IoT Development &amp; Smart Solutions in Sabah, Borneo">
+  <meta name="twitter:description" content="Rogon Network is a Sabah-based IoT development company specializing in embedded systems, smart devices, digital platforms, and rural internet connectivity across Borneo.">
   <meta name="twitter:image" content="https://rogon.network/assets/img/logo.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
+  <!-- Preload hero resources -->
+  <link rel="preload" href="assets/img/hero-carousel/hero-carousel-1.webp" as="image" fetchpriority="high">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://challenges.cloudflare.com">
 
-  <!-- Template Main CSS File -->
+  <!-- Main Stylesheet -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer ></script>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <!-- Cookie Consent -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-content">
+      <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
+      <button id="cookie-accept" class="btn btn-sm">Accept</button>
+    </div>
+  </div>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Rogon Network's logo">
-        <h1>Rogon Network</h1>
+  <!-- Header -->
+  <header id="header" class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Rogon Network home">
+        <img src="assets/img/logo.png" alt="Rogon Network - IoT Development Company in Sabah, Borneo">
+        <span class="logo-text">Rogon Network</span>
       </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <nav class="nav-desktop" aria-label="Main navigation">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about-us">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#our-approach">Approach</a></li>
-          <li><a href="#contact-us">Contact</a></li>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about-us" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#our-offer" class="nav-link">What We Offer</a></li>
+          <li><a href="#our-approach" class="nav-link">Approach</a></li>
+          <li><a href="#contact-us" class="nav-link">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
+    <!-- Mobile nav overlay -->
+    <div id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about-us" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#our-offer" class="nav-link">What We Offer</a></li>
+        <li><a href="#our-approach" class="nav-link">Approach</a></li>
+        <li><a href="#contact-us" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Smart Solutions, Meaningful Impact</h2>
-            <p data-aos="fade-up">Extending connectivity beyond the city limits. We provide the critical network infrastructure and IoT systems needed to strengthen rural communities and drive local industries forward.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#about-us" class="btn-get-started">Get Started</a>
-          </div>
+  <main>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero" aria-label="Hero banner">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image: url('assets/img/hero-carousel/hero-carousel-1.webp');"></div>
+        <div class="hero-slide" style="background-image: url('assets/img/hero-carousel/hero-carousel-2.webp');"></div>
+        <div class="hero-slide" style="background-image: url('assets/img/hero-carousel/hero-carousel-3.webp');"></div>
+        <div class="hero-slide" style="background-image: url('assets/img/hero-carousel/hero-carousel-4.webp');"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>IoT Development &amp; Smart Solutions in Sabah</h1>
+        <p class="hero-subtitle">Bridging the digital divide with end-to-end IoT development and embedded systems for communities and industries across Sabah and Borneo.</p>
+        <div class="hero-actions">
+          <a href="#about-us" class="btn btn-primary">Get Started</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
         </div>
       </div>
-    </div>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.webp)">
+      <div class="hero-nav">
+        <button class="hero-nav-btn hero-prev" aria-label="Previous slide"><i class="bi bi-chevron-left"></i></button>
+        <button class="hero-nav-btn hero-next" aria-label="Next slide"><i class="bi bi-chevron-right"></i></button>
       </div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.webp)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.webp)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.webp)"></div>
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev" aria-label="Hero carousel's previous button">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next" aria-label="Hero carousel's next button">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-
-  </section><!-- End Hero Section -->
-
-  <main id="main">
+      <div class="hero-dots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+        <button class="dot" aria-label="Slide 4"></button>
+      </div>
+    </section>
 
     <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="constructions">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header pb-4">
-          <h2>Who we are</h2>
-          <p>We build practical technology that helps communities and organizations grow together.</p>
+    <section id="about-us" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="about-heading">Who we are</h2>
+          <p>A <span>Sabah-based IoT development company</span> rooted in Borneo, building smart embedded systems and digital solutions for real-world impact.</p>
         </div>
 
-        <div class="about-showcase row g-4 align-items-stretch mt-2">
-          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-            <article class="about-panel h-100">
-              <p class="about-lead mb-3">Rogon Network is a Sabah-based technology company focused on digital platforms, IoT systems, and dependable connectivity for both urban and rural environments.</p>
-              <p class="mb-4">Our mission is simple: make technology useful, inclusive, and meaningful. We design solutions that solve real problems while strengthening people, local industries, and long-term partnerships.</p>
-
-              <div class="about-badges d-flex flex-wrap gap-2">
-                <span class="about-badge"><i class="bi bi-cpu"></i> IoT Solutions</span>
-                <span class="about-badge"><i class="bi bi-hdd-network"></i> Digital Platforms</span>
-                <span class="about-badge"><i class="bi bi-broadcast"></i> Rural Connectivity</span>
-                <span class="about-badge"><i class="bi bi-people"></i> Community-Centered</span>
-              </div>
-            </article>
+        <div class="about-content reveal">
+          <div class="about-text">
+            <p>Rogon Network is a Sabah-based technology company focused on delivering IoT solutions and smart systems that are designed for real-world environments. We believe technology should be accessible, practical, and built to last — especially in the rural and semi-urban communities that are often overlooked by mainstream providers.</p>
+            <p>Our team combines expertise in embedded systems, software engineering, and community engagement to deliver solutions that bridge the digital divide. Whether it's deploying sensors in remote locations or building digital platforms for local enterprises, we approach every project with a commitment to quality, sustainability, and local impact.</p>
           </div>
 
-          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-cards-vertical d-flex flex-column h-100">
-              <div class="about-card">
-                <div class="card-icon">
-                  <i class="bi bi-heart-fill"></i>
-                </div>
-                <h3>Meaningful Impact</h3>
-                <p>Technology that improves daily life, workflows, and access to opportunities.</p>
-              </div>
-              <div class="about-card">
-                <div class="card-icon">
-                  <i class="bi bi-gear-fill"></i>
-                </div>
-                <h3>Built for Context</h3>
-                <p>Solutions adapted to local conditions, not one-size-fits-all templates.</p>
-              </div>
-              <div class="about-card">
-                <div class="card-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <h3>Long-Term Value</h3>
-                <p>We support adoption, growth, and sustainability beyond launch day.</p>
-              </div>
-            </div>
+          <div class="about-tags">
+            <span class="about-tag"><i class="bi bi-cpu"></i> IoT Development</span>
+            <span class="about-tag"><i class="bi bi-motherboard"></i> Embedded Systems</span>
+            <span class="about-tag"><i class="bi bi-window-stack"></i> Digital Platforms</span>
+            <span class="about-tag"><i class="bi bi-wifi"></i> Rural Connectivity</span>
+            <span class="about-tag"><i class="bi bi-people"></i> Community-Centered</span>
           </div>
+        </div>
+
+        <div class="about-cards reveal">
+          <article class="about-card">
+            <div class="about-card-icon"><i class="bi bi-bullseye"></i></div>
+            <h3>Meaningful Impact</h3>
+            <p>We don't build technology for its own sake. Every solution we develop is measured by the real difference it makes for communities, businesses, and the environment in Sabah.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-icon"><i class="bi bi-geo-alt"></i></div>
+            <h3>Built for Context</h3>
+            <p>Our solutions are designed to thrive in Sabah's unique terrain, climate, and infrastructure conditions — from urban centers to the most remote villages.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>Long-Term Value</h3>
+            <p>We prioritize sustainable, maintainable solutions that continue to deliver value long after deployment, with local support and capacity building at the core.</p>
+          </article>
         </div>
       </div>
-    </section><!-- End About Us Section -->
+    </section>
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>What we do</h2>
-          <p>Rogon Network delivers solutions that address both<br>today’s challenges and tomorrow’s opportunities.</p>
+    <section id="services" class="section section-alt" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="services-heading">What we do</h2>
+          <p>We offer <span>end-to-end IoT and digital solutions</span> tailored to the needs of communities and industries in Sabah.</p>
         </div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-tachograph-digital"></i>
-              </div>
-              <h3>Digital Platforms</h3>
-              <p>Tools that preserve knowledge, connect people, and support sustainable growth.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-satellite"></i>
-              </div>
-              <h3>IoT Innovations</h3>
-              <p>Smart devices and sensors that bring efficiency, safety, and intelligence to everyday environments.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-group-arrows-rotate"></i>
-              </div>
-              <h3>Community Integration</h3>
-              <p>Technology designed with inclusivity in mind, ensuring local adoption and meaningful use.</p>
-            </div>
-          </div><!-- End Service Item -->
-
+        <div class="services-grid reveal">
+          <article class="service-card">
+            <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+            <h3>Digital Platforms</h3>
+            <p>Custom web and mobile applications that connect people, devices, and data. From dashboards to management systems, we build platforms that bring your operations online.</p>
+            <a href="#our-offer" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="bi bi-cpu"></i></div>
+            <h3>IoT Development</h3>
+            <p>End-to-end IoT solutions including hardware prototyping, embedded firmware, sensor networks, and cloud integration. We design systems that collect, transmit, and act on data from the field.</p>
+            <a href="#our-offer" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="bi bi-people"></i></div>
+            <h3>Community Integration</h3>
+            <p>Technology adoption isn't just about hardware — it's about people. We work closely with local communities to ensure our solutions are understood, adopted, and sustained.</p>
+            <a href="#our-offer" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+          </article>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
     <!-- ======= What We Offer Section ======= -->
-    <section id="alt-services" class="alt-services">
-      <div class="container" data-aos="fade-up">
+    <section id="our-offer" class="section" aria-labelledby="offer-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="offer-heading">What we offer</h2>
+          <p>Comprehensive <span>technology services</span> designed to meet the unique challenges of operating in Sabah and beyond.</p>
+        </div>
 
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.webp);" data-aos="zoom-in"
-            data-aos-delay="100"></div>
-
-          <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>What we offer</h3>
-            <p>We create powerful technology solutions to bridge the digital divide. We connect enterprises and communities through custom platforms, IoT integration, rural internet, and strategic partnership building.</p>
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-braces-asterisk flex-shrink-0"></i>
+        <div class="offer-layout reveal">
+          <div class="offer-items">
+            <div class="offer-item">
+              <div class="offer-icon"><i class="bi bi-code-slash"></i></div>
               <div>
                 <h4>Platform Development</h4>
-                <p>End-to-end design, deployment, and management of digital platforms.</p>
+                <p>Custom web applications, management dashboards, and mobile solutions built with modern technologies and designed for usability, scalability, and reliability.</p>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-bezier2 flex-shrink-0"></i>
+            </div>
+            <div class="offer-item">
+              <div class="offer-icon"><i class="bi bi-cpu-fill"></i></div>
               <div>
-                <h4>IoT Solutions</h4>
-                <p>Smart technology integration for industries, organizations, and communities.</p>
+                <h4>IoT Development &amp; Embedded Systems</h4>
+                <p>From concept to deployment, we design and build sensor networks, embedded firmware, and IoT infrastructure that works reliably in challenging environments.</p>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-broadcast-pin flex-shrink-0"></i>
+            </div>
+            <div class="offer-item">
+              <div class="offer-icon"><i class="bi bi-wifi"></i></div>
               <div>
                 <h4>Rural Internet Connectivity</h4>
-                <p>Provide installation nodes to capture stable signal and relay them through wireless routers, extending reliable internet to rural and blind spot areas.</p>
+                <p>Bringing connectivity to underserved areas through custom network solutions, alternative infrastructure, and community-managed internet access points.</p>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-people-fill flex-shrink-0"></i>
+            </div>
+            <div class="offer-item">
+              <div class="offer-icon"><i class="bi bi-handshake"></i></div>
               <div>
                 <h4>Partnership Building</h4>
-                <p>Connecting enterprises, communities, and institutions to ensure long-term success.</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End What We Offer Section -->
-
-    <!-- ======= Appproach Section ======= -->
-    <section id="our-approach" class="features section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Our approach</h2>
-          <p>We tailor our technology to create real impact for you and your community.</p>
-        </div>
-
-        <ul class="nav nav-tabs row  g-2 d-flex">
-
-          <li class="nav-item col-sm-6 col-lg-3">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>By understanding</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-sm-6 col-lg-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>By designing</h4>
-            </a><!-- End tab nav item -->
-
-          <li class="nav-item col-sm-6 col-lg-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>By creating</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-sm-6 col-lg-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>By supporting</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
-        <div class="tab-content">
-
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-                data-aos="fade-up" data-aos-delay="100">
-                <h3>We start by listening to you.</h3>
-                <p>
-                  We work closely with your team and community to grasp the unique nuances of your environment, ensuring we solve the right problems from the very beginning.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.webp" alt="A man guiding an older man how to use the system." class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>We craft intelligent solutions for you.</h3>
-                <p>
-                  Whether it is an IoT network or a digital platform, we design systems that are intuitive, scalable, and perfectly fitted to your specific goals.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.webp" alt="Three colleagues collaborating at a computer desk" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>We turn concepts into reality.</h3>
-                <p>
-                  Our team builds robust infrastructures and seamless integrations that bridge the digital divide, delivering technology that works reliably in the real world.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.webp" alt="IoT infrastructure and network installation for rural connectivity" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>We believe in long-term partnership.</h3>
-                <p>
-                  Beyond deployment, we ensure sustainable success through ongoing maintenance, training, and dedication to your continued growth.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.webp" alt="Team collaboration and partnership building for long-term success" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
-
-     <!-- ======= Get Started Section ======= -->
-    <section id="contact-us" class="get-started section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Get in touch</h2>
-          <p>Join us in building technology that strengthens communities and drives meaningful progress.</p>
-        </div>
-
-        <div class="contact-panel row g-4 align-items-stretch">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="contact-info-card h-100">
-              <h3>Let’s build something impactful together</h3>
-              <p class="mb-4">Tell us what you’re planning and our team will help you explore the best approach, from connectivity and IoT to digital platform implementation.</p>
-
-              <div class="contact-info-list">
-                <a class="contact-info-item" href="tel:+60128731819">
-                  <span class="icon-wrap"><i class="bi bi-telephone-fill"></i></span>
-                  <span>
-                    <strong>Talk to us</strong>
-                    <small>+60 12-873 1819 (Mon - Fri, 9AM to 5PM)</small>
-                  </span>
-                </a>
-
-                <a class="contact-info-item" href="mailto:info@rogon.network">
-                  <span class="icon-wrap"><i class="bi bi-envelope-fill"></i></span>
-                  <span>
-                    <strong>Email us</strong>
-                    <small>info@rogon.network</small>
-                  </span>
-                </a>
-
-                <a class="contact-info-item" href="https://share.google/Pw7w5m85wttkzr59a">
-                  <span class="icon-wrap"><i class="bi bi-geo-alt-fill"></i></span>
-                  <span>
-                    <strong>Visit us</strong>
-                    <small>H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, MY.</small>
-                  </span>
-                </a>
+                <p>We collaborate with government agencies, NGOs, and private sector partners to scale technology initiatives and create lasting digital ecosystems in Sabah.</p>
               </div>
             </div>
           </div>
+          <div class="offer-image reveal">
+            <img src="assets/img/alt-services.webp" alt="Rogon Network IoT development services in Sabah, Borneo" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <form action="https://send.bah.my/rogon" method="post" class="php-email-form contact-form-card" novalidate="novalidate">
-              <h3>Start your enquiry</h3>
-              <p class="mb-4">Share your details and we’ll get back to you shortly.</p>
-              <div class="row gy-3">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your enquiries have been sent successfully. Thank you!</div>
-
-                  <button type="submit">Get connected!</button>
-                  <div class="cf-turnstile mt-2" data-sitekey="0x4AAAAAAARepDlzRUeiygyt" data-theme="light" data-size="normal"></div>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Quote Form -->
-
+    <!-- ======= Our Approach Section ======= -->
+    <section id="our-approach" class="section section-alt" aria-labelledby="approach-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="approach-heading">Our approach to IoT development</h2>
+          <p>A <span>structured methodology</span> that ensures every project delivers real, measurable results.</p>
         </div>
 
+        <div class="approach-tabs reveal">
+          <div class="approach-tab-nav" role="tablist" aria-label="Approach phases">
+            <button class="approach-tab-btn active" role="tab" aria-selected="true" data-tab="tab-discover">
+              <i class="bi bi-search"></i>
+              <span>Discover</span>
+            </button>
+            <button class="approach-tab-btn" role="tab" aria-selected="false" data-tab="tab-design">
+              <i class="bi bi-pencil-square"></i>
+              <span>Design</span>
+            </button>
+            <button class="approach-tab-btn" role="tab" aria-selected="false" data-tab="tab-develop">
+              <i class="bi bi-gear"></i>
+              <span>Develop</span>
+            </button>
+            <button class="approach-tab-btn" role="tab" aria-selected="false" data-tab="tab-deploy">
+              <i class="bi bi-rocket-takeoff"></i>
+              <span>Deploy</span>
+            </button>
+          </div>
+
+          <div class="approach-tab-panels">
+            <div class="approach-tab-panel active" id="tab-discover" role="tabpanel">
+              <div class="approach-panel-content">
+                <div class="approach-panel-text">
+                  <h3>Understanding the Challenge</h3>
+                  <p>Every successful IoT project begins with a deep understanding of the environment, the people, and the problem. We spend time on the ground — visiting sites, talking to stakeholders, and gathering requirements that go beyond the technical specifications.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> On-site assessments and stakeholder interviews</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Environmental and infrastructure analysis</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Feasibility studies and technical requirements gathering</li>
+                  </ul>
+                </div>
+                <div class="approach-panel-image">
+                  <img src="assets/img/features-1.webp" alt="IoT project discovery and stakeholder consultation in Sabah" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="approach-tab-panel" id="tab-design" role="tabpanel">
+              <div class="approach-panel-content">
+                <div class="approach-panel-text">
+                  <h3>Architecting the Solution</h3>
+                  <p>With a clear picture of the requirements, we design a system architecture that balances performance, cost, and maintainability. Our designs account for local constraints like power availability, network reliability, and environmental conditions.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Hardware selection and system architecture design</li>
+                    <li><i class="bi bi-check-circle-fill"></i> User experience and interface prototyping</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Data flow and integration planning</li>
+                  </ul>
+                </div>
+                <div class="approach-panel-image">
+                  <img src="assets/img/features-2.webp" alt="IoT solution architecture and embedded systems design" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="approach-tab-panel" id="tab-develop" role="tabpanel">
+              <div class="approach-panel-content">
+                <div class="approach-panel-text">
+                  <h3>Building with Quality</h3>
+                  <p>Our development process is iterative and transparent. We build, test, and refine in cycles, keeping stakeholders informed at every stage. From firmware to frontend, every component is developed with maintainability and robustness in mind.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Agile development with regular progress updates</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Continuous testing in real-world conditions</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Documentation and knowledge transfer</li>
+                  </ul>
+                </div>
+                <div class="approach-panel-image">
+                  <img src="assets/img/features-3.webp" alt="IoT development and embedded firmware engineering in Sabah" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="approach-tab-panel" id="tab-deploy" role="tabpanel">
+              <div class="approach-panel-content">
+                <div class="approach-panel-text">
+                  <h3>Deploying for Impact</h3>
+                  <p>Deployment is where everything comes together. We handle installation, configuration, training, and handover — ensuring the solution is not just technically operational but truly adopted by the people who will use and maintain it.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> On-site installation and commissioning</li>
+                    <li><i class="bi bi-check-circle-fill"></i> User training and capacity building</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Ongoing support and performance monitoring</li>
+                  </ul>
+                </div>
+                <div class="approach-panel-image">
+                  <img src="assets/img/features-4.webp" alt="IoT deployment and community technology support in Borneo" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Get Started Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ======= FAQ Section ======= -->
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p>Common questions about our <span>IoT services in Sabah</span></p>
+        </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary class="faq-question">What types of IoT solutions does Rogon Network provide in Sabah?</summary>
+            <div class="faq-answer">
+              <p>We provide end-to-end IoT solutions including environmental monitoring systems, smart agriculture sensors, rural connectivity infrastructure, asset tracking, and custom embedded systems. Our solutions are designed specifically for the unique challenges of Sabah's geography and climate.</p>
+            </div>
+          </details>
 
-    <div class="container footer-main position-relative">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-brand">
-            <a href="#hero" class="d-inline-flex align-items-center mb-3">
-              <img src="assets/img/logo.png" alt="Rogon Network logo">
-            </a>
-            <p>Rogon Network builds practical digital and IoT solutions that strengthen connectivity, industry, and communities across Sabah.</p>
+          <details class="faq-item">
+            <summary class="faq-question">How does Rogon Network handle connectivity in remote rural areas?</summary>
+            <div class="faq-answer">
+              <p>We use a combination of technologies including LoRaWAN for long-range, low-power sensor communication, satellite backhaul where cellular coverage is unavailable, and community-managed Wi-Fi access points. Each deployment is custom-designed based on the specific location's infrastructure and needs.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can Rogon Network build custom IoT hardware for specific use cases?</summary>
+            <div class="faq-answer">
+              <p>Yes. We have in-house expertise in embedded systems design, PCB development, and hardware prototyping. We can develop custom sensor nodes, control systems, and data loggers tailored to your specific requirements — from proof-of-concept to production-ready devices.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is the typical timeline for an IoT project with Rogon Network?</summary>
+            <div class="faq-answer">
+              <p>Project timelines vary depending on complexity. A typical IoT deployment — from discovery to deployment — ranges from 2 to 6 months. Smaller proof-of-concept projects can be delivered in 4–8 weeks. We provide detailed timelines during the discovery phase and keep stakeholders updated throughout.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Do you provide ongoing support and maintenance for deployed systems?</summary>
+            <div class="faq-answer">
+              <p>Absolutely. We offer comprehensive support packages including remote monitoring, on-site maintenance visits, firmware updates, and technical support. We also provide training for local teams to build capacity for long-term self-sufficiency where appropriate.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact-us" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="contact-heading">Get in touch</h2>
+          <p>Have an IoT project in Sabah? <span>Let's talk</span> about how we can help bring your ideas to life.</p>
+        </div>
+
+        <div class="contact-layout reveal">
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <h3>Our Office</h3>
+                <address>H-03-09, Aeropod Commercial Square,<br>Jalan Aeropod Off Jalan Kepayan,<br>88200 Kota Kinabalu, Sabah,<br>Malaysia</address>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:info@rogon.network">info@rogon.network</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <h3>Call Us</h3>
+                <p><a href="tel:+60128731819">+60 12-873 1819</a></p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" action="https://send.bah.my/rogon" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name" class="sr-only">Your Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Your Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="sr-only">Subject</label>
+              <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <!-- Turnstile -->
+            <div id="cf-turnstile-widget" data-sitekey="0x4AAAAAAARepDlzRUeiygyt" data-theme="light" data-size="normal"></div>
+
+            <div class="form-messages">
+              <div class="loading-message" style="display:none;">Sending your message...</div>
+              <div class="error-message" style="display:none;"></div>
+              <div class="success-message" style="display:none;">Your message has been sent. Thank you!</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+              <img src="assets/img/logo.png" alt="Rogon Network - IoT Development Company in Sabah, Borneo">
+            <span>Rogon Network</span>
+          </a>
+          <p>IoT development company in Sabah — building embedded systems, digital platforms, and connectivity solutions across Borneo.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Phisoft Website"><i class="bi bi-globe"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6">
-          <h4>Quick links</h4>
-          <ul class="footer-links">
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
             <li><a href="#hero">Home</a></li>
-            <li><a href="#about-us">Who we are</a></li>
-            <li><a href="#services">What we do</a></li>
-            <li><a href="#our-approach">Our approach</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-offer">What We Offer</a></li>
+            <li><a href="#our-approach">Our Approach</a></li>
             <li><a href="#contact-us">Contact</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="footer-contact">
           <h4>Contact</h4>
-          <ul class="footer-contact list-unstyled mb-0">
+          <ul>
+            <li><i class="bi bi-geo-alt"></i> H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, Malaysia</li>
             <li><i class="bi bi-telephone"></i> <a href="tel:+60128731819">+60 12-873 1819</a></li>
             <li><i class="bi bi-envelope"></i> <a href="mailto:info@rogon.network">info@rogon.network</a></li>
-            <li><i class="bi bi-geo-alt"></i> H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, MY.</li>
           </ul>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow us</h4>
-          <p class="footer-social-copy">Stay connected for updates and community initiatives.</p>
-          <div class="social-links d-flex align-items-center">
-            <a aria-label="Facebook link" href="https://www.facebook.com/phisoft.my/" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-            <a aria-label="Instagram link" href="https://www.instagram.com/phisoft.my/" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-            <a aria-label="Website link" href="https://www.phisoft.my/" class="d-flex align-items-center justify-content-center"><i class="bi bi-globe"></i></a>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Rogon Network. All rights reserved.</p>
+        <a href="/privacy-policy">Privacy Policy</a>
       </div>
     </div>
-
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; 2026 <strong><span>ROGON NETWORK</span></strong>. All Rights Reserved.
-        </div>
-      </div>
-    </div>
-
   </footer>
-  <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <!-- Scroll to Top -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
-  <div id="preloader"></div>
+  <!-- Turnstile script (async, at end of body) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async onerror="var w=document.getElementById('cf-turnstile-widget');if(w){w.innerHTML='<p class=turnstile-fallback>CAPTCHA verification unavailable. You may still submit the form.</p>';}"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Template Main JS File -->
+  <!-- Main JavaScript -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Schema Markup -->
+  <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rogon.network" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of IoT solutions does Rogon Network provide in Sabah?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide end-to-end IoT solutions including environmental monitoring systems, smart agriculture sensors, rural connectivity infrastructure, asset tracking, and custom embedded systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Rogon Network handle connectivity in remote rural areas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use a combination of technologies including LoRaWAN for long-range, low-power sensor communication, satellite backhaul where cellular coverage is unavailable, and community-managed Wi-Fi access points."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Rogon Network build custom IoT hardware for specific use cases?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We have in-house expertise in embedded systems design, PCB development, and hardware prototyping. We can develop custom sensor nodes, control systems, and data loggers tailored to your specific requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the typical timeline for an IoT project with Rogon Network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A typical IoT deployment ranges from 2 to 6 months. Smaller proof-of-concept projects can be delivered in 4-8 weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide ongoing support and maintenance for deployed systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We offer comprehensive support packages including remote monitoring, on-site maintenance visits, firmware updates, and technical support."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
     "name": "Rogon Network",
+    "description": "Rogon Network is a Sabah-based IoT development company specializing in embedded systems, ESP32 development, smart devices, digital platforms, and rural internet connectivity across Borneo.",
     "url": "https://rogon.network",
     "logo": "https://rogon.network/assets/img/logo.png",
-    "description": "Rogon Network provides smart IoT solutions, digital platforms, and rural internet connectivity in Sabah, bridging the digital divide with meaningful technology for communities and industries.",
+    "image": "https://rogon.network/assets/img/logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan",
@@ -541,6 +594,11 @@
       "addressRegion": "Sabah",
       "postalCode": "88200",
       "addressCountry": "MY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 5.9374,
+      "longitude": 116.0789
     },
     "contactPoint": {
       "@type": "ContactPoint",
@@ -554,6 +612,40 @@
         "closes": "17:00"
       }
     },
+    "areaServed": {
+      "@type": "State",
+      "name": "Sabah"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "IoT Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "IoT Development & Embedded Systems",
+            "description": "End-to-end IoT product development including ESP32-based prototypes, sensor integration, firmware, and deployment for industries and communities."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Platform Development",
+            "description": "End-to-end design, deployment, and management of digital platforms."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Rural Internet Connectivity",
+            "description": "Installation nodes to capture stable signal and relay through wireless routers, extending reliable internet to rural areas across Sabah."
+          }
+        }
+      ]
+    },
     "sameAs": [
       "https://www.facebook.com/phisoft.my/",
       "https://www.instagram.com/phisoft.my/",
@@ -563,5 +655,4 @@
   </script>
 
 </body>
-
 </html>
