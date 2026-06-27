@@ -286,6 +286,26 @@ details:focus-visible {
   flex-shrink: 0;
 }
 
+/* ─── Skip Link ──────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 8px;
+  padding: 8px 16px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  z-index: 9999;
+  text-decoration: none;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
 /* ─── Header ────────────────────────────────────────── */
 .site-header {
   position: fixed;
@@ -712,6 +732,47 @@ details:focus-visible {
   color: var(--color-muted);
 }
 
+/* ─── Stats Bar ────────────────────────────────────── */
+.stats-bar {
+  background: var(--color-primary);
+  padding: var(--space-xl) 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.stat-item {
+  text-align: center;
+  color: #fff;
+  padding: var(--space-sm);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* ─── Services Section ──────────────────────────────── */
 .services-grid {
   display: grid;
@@ -721,7 +782,13 @@ details:focus-visible {
 
 @media (min-width: 768px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -785,6 +852,96 @@ details:focus-visible {
 
 .service-link:hover i {
   transform: translateX(4px);
+}
+
+.service-best-for {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+/* ─── Services Flow ─────────────────────────────────── */
+.services-flow {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.services-flow-title {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xl);
+}
+
+.services-flow-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-md);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  min-width: 120px;
+}
+
+.flow-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.flow-icon {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+.flow-step strong {
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.flow-step span:last-child {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.flow-arrow {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .services-flow-steps {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flow-arrow {
+    transform: none;
+  }
 }
 
 /* ─── Offer Section ─────────────────────────────────── */
