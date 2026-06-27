@@ -307,6 +307,38 @@ details:focus-visible {
 }
 
 /* ─── Header ────────────────────────────────────────── */
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 12px;
+}
+.lang-switcher a,
+.lang-switcher .lang-active {
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+.lang-switcher .lang-active {
+  background: var(--color-primary);
+  color: #fff;
+}
+.lang-switcher a:hover {
+  color: #fff;
+}
+/* On scrolled header, adjust colors */
+.header.scrolled .lang-switcher a,
+.site-header.scrolled .lang-switcher a {
+  color: var(--color-text-muted);
+}
+.site-header.scrolled .lang-switcher a:hover {
+  color: var(--color-primary);
+}
+
 .site-header {
   position: fixed;
   top: 0;
