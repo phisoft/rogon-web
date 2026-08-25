@@ -211,27 +211,6 @@
     startAutoplay();
   }
 
-  // ─── Approach Tabs ──────────────────────────────────
-  var tabButtons = document.querySelectorAll('.approach-tab-btn');
-  var tabPanels = document.querySelectorAll('.approach-tab-panel');
-
-  tabButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var targetId = btn.getAttribute('data-tab');
-
-      tabButtons.forEach(function (b) {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      tabPanels.forEach(function (p) { p.classList.remove('active'); });
-
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-      var target = document.getElementById(targetId);
-      if (target) target.classList.add('active');
-    });
-  });
-
   // ─── Intersection Observer - Reveal Animations ──────
   // Respects prefers-reduced-motion: handled via CSS
   if ('IntersectionObserver' in window) {
