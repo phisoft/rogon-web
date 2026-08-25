@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#4f46e5">
   <title>Privacy Policy | Rogon Network</title>
   <meta name="description" content="Privacy Policy of Rogon Network — how we collect, use, and protect your personal information.">
   <meta name="robots" content="index, follow">
@@ -17,7 +18,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,168 +27,223 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    .legal-page { padding: 120px 0 80px; background: var(--color-bg-light); min-height: 100vh; }
-    .legal-page .section-header { text-align: left; margin-bottom: var(--space-3xl); }
-    .legal-page .section-header h2 { font-size: 2.2rem; margin-bottom: 8px; }
-    .legal-page .section-header p { font-size: 0.9rem; color: var(--color-text-muted); }
-    .legal-page h3 { font-size: 1.3rem; font-weight: 600; color: var(--color-dark-secondary); margin: var(--space-2xl) 0 var(--space-sm); }
-    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: var(--color-text); }
-    .legal-page ul { padding-left: 20px; margin-bottom: var(--space-lg); }
-    .legal-page a { color: var(--color-primary); text-decoration: underline; }
-    .legal-page a:hover { color: var(--color-primary-hover); }
-    .legal-page .container { max-width: 800px; }
-    .legal-nav { margin-bottom: var(--space-xl); padding: var(--space-lg); background: var(--color-white); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
-    .legal-nav a { display: inline-flex; align-items: center; gap: 6px; color: var(--color-text); font-weight: 500; font-size: 0.9rem; }
-    .legal-nav a:hover { color: var(--color-primary); }
-    @media (max-width: 768px) { .legal-page { padding: 100px 0 60px; } }
+    .legal-masthead {
+      background: var(--surface-inverse);
+      color: #fff;
+      padding: var(--space-10) 0 var(--space-8);
+      text-align: center;
+    }
+    .legal-masthead .container { max-width: 800px; }
+    .legal-masthead h1 {
+      color: #fff;
+      font-size: var(--font-h2);
+      margin-bottom: var(--space-2);
+    }
+    .legal-masthead p { color: var(--text-muted-dark); margin: 0; }
+    .legal-nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin: var(--space-8) 0;
+      padding: var(--space-2) var(--space-3);
+      background: var(--surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      font-size: var(--font-body-sm);
+    }
+    .legal-nav a { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legal-nav .sep { color: var(--color-border-strong); }
+    .legal-body { max-width: 800px; margin: 0 auto; }
+    .legal-body h2 { font-size: var(--font-h2); margin-bottom: var(--space-3); }
+    .legal-body h3 {
+      font-size: var(--font-h4);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: var(--space-8) 0 var(--space-2);
+    }
+    .legal-body p, .legal-body li {
+      font-size: var(--font-body);
+      line-height: var(--line-base);
+      color: var(--text-secondary);
+      margin-bottom: var(--space-2);
+    }
+    .legal-body ul { padding-left: 20px; list-style: disc; }
+    .legal-body li { margin-bottom: var(--space-1); }
+    .legal-body a { font-weight: 500; }
+    @media (max-width: 768px) {
+      .legal-masthead { padding: var(--space-8) 0 var(--space-6); }
+      .legal-nav { flex-wrap: wrap; }
+    }
   </style>
 </head>
 
 <body>
 
-<!-- Header -->
-<header id="header" class="header scrolled">
-  <div class="container header-inner">
-    <a href="/" class="logo" aria-label="Rogon Network Home">
-      <img src="assets/img/logo.png" alt="Rogon Network logo" width="40" height="40">
-      <span class="logo-text">Rogon Network</span>
-    </a>
-    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
-      <ul class="nav-list">
+  <!-- Skip to content -->
+  <a href="#legal-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header id="header" class="site-header scrolled">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Rogon Network home">
+        <img src="assets/img/logo.png" alt="Rogon Network - IoT Development Company in Sabah, Borneo">
+        <span class="logo-text">Rogon Network</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/#about-us" class="nav-link">About</a></li>
+          <li><a href="/#services" class="nav-link">Services</a></li>
+          <li><a href="/#contact-us" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/#contact-us" class="btn btn-primary btn-sm nav-cta">Start Your Project</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <div id="mobile-nav" class="mobile-nav">
+      <ul>
         <li><a href="/" class="nav-link">Home</a></li>
         <li><a href="/#about-us" class="nav-link">About</a></li>
         <li><a href="/#services" class="nav-link">Services</a></li>
         <li><a href="/#contact-us" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-    </button>
-  </div>
-</header>
+    </div>
+  </header>
 
-<main>
-  <div class="legal-page">
+  <main id="legal-content">
+
+    <div class="legal-masthead">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: 26 June 2026</p>
+      </div>
+    </div>
+
     <div class="container">
-
       <div class="legal-nav">
         <a href="/"><i class="bi bi-arrow-left"></i> Back to Home</a>
-        &nbsp;|&nbsp;
+        <span class="sep">|</span>
         <a href="/#contact-us">Contact Us</a>
       </div>
 
-      <div class="section-header">
-        <h2>Privacy Policy</h2>
-        <p>Last updated: 26 June 2026</p>
+      <div class="legal-body">
+        <p>Rogon Network ("we", "us", or "our") respects your privacy and is committed to protecting the personal data you share with us. This policy explains how we collect, use, and safeguard your information when you visit our website or use our services.</p>
+
+        <h3>1. Information We Collect</h3>
+        <p>We may collect the following types of information:</p>
+        <ul>
+          <li><strong>Contact information</strong> — name, email address, phone number, and company name when you submit our enquiry form.</li>
+          <li><strong>Technical data</strong> — IP address, browser type, device information, and pages visited (via analytics).</li>
+          <li><strong>Communication data</strong> — messages and files you send through our contact form or email.</li>
+        </ul>
+
+        <h3>2. How We Use Your Information</h3>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Respond to your enquiries and provide quotations.</li>
+          <li>Deliver our services and support.</li>
+          <li>Improve our website and user experience.</li>
+          <li>Send occasional communications (only with your consent).</li>
+          <li>Comply with legal obligations.</li>
+        </ul>
+
+        <h3>3. Data Retention</h3>
+        <p>We retain your personal data only as long as necessary to fulfil the purposes described in this policy, or as required by applicable law. Enquiry submissions are retained for up to 24 months after the last contact.</p>
+
+        <h3>4. Data Sharing</h3>
+        <p>We do not sell your personal data. We may share your information with trusted third parties who assist us in operating our website and services (e.g., cloud hosting, email delivery), provided they agree to keep your data confidential and secure.</p>
+
+        <h3>5. Cookies</h3>
+        <p>Our website may use cookies and similar tracking technologies to improve functionality and analyse traffic. You can control cookie preferences through your browser settings. We do not use cookies for targeted advertising.</p>
+
+        <h3>6. Your Rights</h3>
+        <p>Depending on your jurisdiction, you may have the right to:</p>
+        <ul>
+          <li>Access the personal data we hold about you.</li>
+          <li>Request correction or deletion of your data.</li>
+          <li>Object to or restrict processing of your data.</li>
+          <li>Request data portability.</li>
+          <li>Withdraw consent at any time (where processing is based on consent).</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:info@rogon.network">info@rogon.network</a>.</p>
+
+        <h3>7. Security</h3>
+        <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+
+        <h3>8. Third-Party Links</h3>
+        <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of those sites. We encourage you to read their privacy policies before providing any personal data.</p>
+
+        <h3>9. Changes to This Policy</h3>
+        <p>We may update this policy from time to time. Changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+
+        <h3>10. Contact Us</h3>
+        <p>If you have any questions or concerns about this policy, please contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@rogon.network">info@rogon.network</a></li>
+          <li>Phone: <a href="tel:+60128731819">+60 12-873 1819</a></li>
+          <li>Address: H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, MY.</li>
+        </ul>
       </div>
-
-      <p>Rogon Network ("we", "us", or "our") respects your privacy and is committed to protecting the personal data you share with us. This policy explains how we collect, use, and safeguard your information when you visit our website or use our services.</p>
-
-      <h3>1. Information We Collect</h3>
-      <p>We may collect the following types of information:</p>
-      <ul>
-        <li><strong>Contact information</strong> — name, email address, phone number, and company name when you submit our enquiry form.</li>
-        <li><strong>Technical data</strong> — IP address, browser type, device information, and pages visited (via analytics).</li>
-        <li><strong>Communication data</strong> — messages and files you send through our contact form or email.</li>
-      </ul>
-
-      <h3>2. How We Use Your Information</h3>
-      <p>We use your information to:</p>
-      <ul>
-        <li>Respond to your enquiries and provide quotations.</li>
-        <li>Deliver our services and support.</li>
-        <li>Improve our website and user experience.</li>
-        <li>Send occasional communications (only with your consent).</li>
-        <li>Comply with legal obligations.</li>
-      </ul>
-
-      <h3>3. Data Retention</h3>
-      <p>We retain your personal data only as long as necessary to fulfil the purposes described in this policy, or as required by applicable law. Enquiry submissions are retained for up to 24 months after the last contact.</p>
-
-      <h3>4. Data Sharing</h3>
-      <p>We do not sell your personal data. We may share your information with trusted third parties who assist us in operating our website and services (e.g., cloud hosting, email delivery), provided they agree to keep your data confidential and secure.</p>
-
-      <h3>5. Cookies</h3>
-      <p>Our website may use cookies and similar tracking technologies to improve functionality and analyse traffic. You can control cookie preferences through your browser settings. We do not use cookies for targeted advertising.</p>
-
-      <h3>6. Your Rights</h3>
-      <p>Depending on your jurisdiction, you may have the right to:</p>
-      <ul>
-        <li>Access the personal data we hold about you.</li>
-        <li>Request correction or deletion of your data.</li>
-        <li>Object to or restrict processing of your data.</li>
-        <li>Request data portability.</li>
-        <li>Withdraw consent at any time (where processing is based on consent).</li>
-      </ul>
-      <p>To exercise any of these rights, please contact us at <a href="mailto:info@rogon.network">info@rogon.network</a>.</p>
-
-      <h3>7. Security</h3>
-      <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
-
-      <h3>8. Third-Party Links</h3>
-      <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of those sites. We encourage you to read their privacy policies before providing any personal data.</p>
-
-      <h3>9. Changes to This Policy</h3>
-      <p>We may update this policy from time to time. Changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
-
-      <h3>10. Contact Us</h3>
-      <p>If you have any questions or concerns about this policy, please contact us:</p>
-      <ul>
-        <li>Email: <a href="mailto:info@rogon.network">info@rogon.network</a></li>
-        <li>Phone: <a href="tel:+60128731819">+60 12-873 1819</a></li>
-        <li>Address: H-03-09, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, MY.</li>
-      </ul>
-
     </div>
-  </div>
-</main>
+  </main>
 
-<!-- Footer -->
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-about">
-        <a href="/" class="footer-logo">
-          <img src="assets/img/logo.png" alt="Rogon Network" width="36" height="36">
-        </a>
-        <p>Rogon Network is a Sabah-based IoT development company building practical embedded systems, digital platforms, and connectivity solutions across Borneo.</p>
-      </div>
-      <div class="footer-links-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/#about-us">Who we are</a></li>
-          <li><a href="/#services">What we do</a></li>
-          <li><a href="/#contact-us">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><i class="bi bi-telephone"></i> <a href="tel:+60128731819">+60 12-873 1819</a></li>
-          <li><i class="bi bi-envelope"></i> <a href="mailto:info@rogon.network">info@rogon.network</a></li>
-          <li><i class="bi bi-geo-alt"></i> H-03-09, Aeropod Commercial Square,</li>
-          <li class="pl">88200 Kota Kinabalu, Sabah, MY</li>
-        </ul>
-      </div>
-      <div class="footer-social-col">
-        <h4>Follow Us</h4>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/phisoft.my/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/phisoft.my/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.phisoft.my/" aria-label="Website"><i class="bi bi-globe"></i></a>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="assets/img/logo.png" alt="Rogon Network - IoT Development Company in Sabah, Borneo">
+            <span>Rogon Network</span>
+          </a>
+          <p>Rogon Network is a Sabah-based IoT development company building practical embedded systems, digital platforms, and connectivity solutions across Borneo.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.phisoft.my/" target="_blank" rel="nofollow noopener" aria-label="Phisoft Website"><i class="bi bi-globe"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about-us">Who we are</a></li>
+            <li><a href="/#services">What we do</a></li>
+            <li><a href="/#contact-us">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+60128731819">+60 12-873 1819</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:info@rogon.network">info@rogon.network</a></li>
+            <li><i class="bi bi-geo-alt"></i> H-03-09, Aeropod Commercial Square, 88200 Kota Kinabalu, Sabah, MY</li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 <strong>ROGON NETWORK</strong>. All Rights Reserved.</p>
-      <a href="/privacy-policy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
 
-<script src="assets/js/main.js" defer></script>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Rogon Network. All rights reserved.</p>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <a href="https://wa.me/60128731819" class="whatsapp-float" target="_blank" rel="noopener nofollow" aria-label="Chat with Rogon Network on WhatsApp">
+    <svg viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false">
+      <path d="M16.04 4C9.42 4 4 9.41 4 16.03c0 2.12.56 4.19 1.62 6.02L4 28l6.11-1.6a12.06 12.06 0 0 0 5.93 1.51h.01c6.61 0 12.01-5.42 12.01-12.03 0-3.21-1.25-6.23-3.52-8.5A11.95 11.95 0 0 0 16.04 4zm0 1.9c2.7 0 5.24 1.05 7.16 2.96a10.14 10.14 0 0 1 2.96 7.17c0 5.58-4.54 10.12-10.13 10.12-1.79 0-3.52-.47-5.04-1.36l-.36-.21-3.56.93.95-3.47-.24-.38a10.1 10.1 0 0 1-1.55-5.63c0-5.58 4.54-10.13 10.13-10.13zm5.16 12.34c-.06-.1-.23-.16-.48-.28s-1.49-.73-1.72-.82c-.23-.08-.4-.12-.56.13-.17.24-.64.81-.79.98-.15.16-.3.18-.55.06a6.93 6.93 0 0 1-3.43-3.01c-.26-.44.26-.41.74-1.36.08-.17.04-.31-.02-.44-.07-.12-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.53.6.19 1.15.17 1.58.1.48-.08 1.49-.61 1.7-1.2.21-.59.21-1.1.15-1.2z"/>
+    </svg>
+  </a>
+
 </body>
 </html>

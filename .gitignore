@@ -1,2 +1,6 @@
 # macOS
 .DS_Store
+
+# Local Reasonix tooling config
+reasonix.toml
+
